@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{graphicx}  % Requerido para insertar imágenes
+\usepackage{hyperref}  % Para enlaces en el documento
+\usepackage{amsmath}   % Para símbolos matemáticos
+
+% Configuración de la cabecera y pie de página
+\usepackage{fancyhdr}  % Para personalizar cabeceras y pies de página
+\pagestyle{fancy}
+\fancyhf{}  % Limpiar todas las cabeceras y pies por defecto
+\fancyhead[L]{Manual de Uso}  % Cabecera izquierda
+\fancyhead[C]{Título del Manual}  % Cabecera central
+\fancyhead[R]{\today}  % Cabecera derecha
+\fancyfoot[C]{Página \thepage}  % Pie de página central
+
+\title{Manual de Uso del Sistema}
+\author{Juan Pablo Fuentes}  % Autor del manual
+\date{\today}  % Fecha de creación
+
+\begin{document}
+
+\maketitle
+
+% Página 1 - Introducción
+\section{Introducción}
+Este manual está diseñado para guiarte a través del uso del sistema. A continuación se describen las principales funcionalidades y cómo utilizarlas.
+
+\subsection{Objetivo del Manual}
+El objetivo de este manual es proporcionar instrucciones detalladas para utilizar correctamente el sistema.
+
+\subsection{Estructura del Manual}
+Este manual se divide en varias secciones que abordan diferentes temas. Las principales secciones son:
+\begin{itemize}
+    \item Introducción al sistema
+    \item Configuración inicial
+    \item Uso básico
+    \item Problemas comunes y soluciones
+\end{itemize}
+
+\newpage  % Cambiar de página
+
+% Página 2 - Configuración inicial
+\section{Configuración Inicial}
+La configuración inicial es crucial para garantizar que el sistema funcione correctamente. A continuación se describen los pasos para completar la configuración.
+
+\subsection{Requisitos del Sistema}
+Para configurar el sistema, necesitas cumplir con los siguientes requisitos:
+\begin{enumerate}
+    \item Sistema operativo Windows 10 o superior
+    \item Al menos 4 GB de memoria RAM
+    \item Espacio libre en disco de al menos 1 GB
+\end{enumerate}
+
+\subsection{Pasos de Configuración}
+Para configurar el sistema correctamente, sigue estos pasos:
+\begin{enumerate}
+    \item Descarga el archivo de instalación desde el sitio oficial.
+    \item Ejecuta el instalador y sigue las instrucciones en pantalla.
+    \item Una vez instalado, abre el sistema y realiza la configuración inicial, que incluye la selección de idioma y zona horaria.
+\end{enumerate}
+
+\newpage  % Cambiar de página
+
+% Página 3 - Uso básico
+\section{Uso Básico}
+En esta sección, aprenderás a utilizar las funciones básicas del sistema.
+
+\subsection{Acceder al Sistema}
+Para acceder al sistema, sigue estos pasos:
+\begin{itemize}
+    \item Abre el programa desde el menú de inicio.
+    \item Ingresa tus credenciales de usuario (nombre de usuario y contraseña).
+    \item Haz clic en el botón \texttt{Iniciar sesión}.
+\end{itemize}
+
+\subsection{Navegación Principal}
+La pantalla principal está dividida en varias secciones. A continuación se detallan los componentes principales:
+\begin{itemize}
+    \item Barra de menú: Desde aquí puedes acceder a todas las opciones del sistema.
+    \item Área de trabajo: Aquí puedes ver y editar los archivos y proyectos.
+    \item Panel de configuración: Permite ajustar las preferencias del sistema.
+\end{itemize}
+
+\newpage  % Cambiar de página
+
+% Página 4 - Problemas comunes y soluciones
+\section{Problemas Comunes y Soluciones}
+Aquí se describen algunos de los problemas más comunes que los usuarios pueden enfrentar y sus soluciones.
+
+\subsection{Problema 1: El sistema no se inicia}
+Si el sistema no se inicia correctamente, intenta lo siguiente:
+\begin{enumerate}
+    \item Verifica que el sistema esté correctamente instalado.
+    \item Asegúrate de que tu computadora cumple con los requisitos mínimos.
+    \item Reinstala el sistema si es necesario.
+\end{enumerate}
+
+\subsection{Problema 2: Error al guardar los archivos}
+Si experimentas problemas al guardar archivos, intenta lo siguiente:
+\begin{itemize}
+    \item Asegúrate de tener permisos de escritura en el directorio de destino.
+    \item Verifica que el disco duro tiene suficiente espacio.
+    \item Intenta guardar el archivo en una ubicación diferente.
+\end{itemize}
+
+\subsection{Problema 3: El sistema se cierra inesperadamente}
+Este problema puede ser causado por varios factores. Algunas soluciones incluyen:
+\begin{enumerate}
+    \item Revisa si hay actualizaciones del sistema que puedan solucionar el problema.
+    \item Desactiva temporalmente el software antivirus para evitar posibles interferencias.
+    \item Si el problema persiste, contacta con el soporte técnico.
+\end{enumerate}
+
+\newpage  % Cambiar de página
+
+% Página 5 - Conclusión
+\section{Conclusión}
+Este manual proporciona una guía completa para la instalación, configuración y uso básico del sistema. Si experimentas problemas, no dudes en consultar la sección de problemas comunes y soluciones, o contactar con el soporte técnico.
+
+\end{document}

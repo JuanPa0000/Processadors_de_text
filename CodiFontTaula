@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx}  % Requerido para insertar imágenes
+\usepackage{hyperref}  % Para crear enlaces y referencias
+\usepackage{caption}   % Para personalizar los pies de tabla
+\usepackage{amsmath}   % Para símbolos matemáticos
+
+% Configuración de la cabecera y pie de página
+\usepackage{fancyhdr}  % Para personalizar cabeceras y pies de página
+\pagestyle{fancy}
+\fancyhf{}  % Limpiar todas las cabeceras y pies por defecto
+\fancyhead[L]{Manual de Tablas}  % Cabecera izquierda
+\fancyhead[C]{Ejemplo de Documento con Tablas}  % Cabecera central
+\fancyhead[R]{Fecha de Creación}  % Cabecera derecha
+\fancyfoot[C]{Página \thepage}  % Pie de página central
+
+\title{Documento con Tablas}
+\author{Juan Pablo Fuentes}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents  % Índice general del documento
+\newpage  % Cambiar de página
+
+% Página 2 - Primera Tabla
+\section{Primera Tabla}
+A continuación se presenta la primera tabla que muestra los datos de ventas por mes.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Mes} & \textbf{Ventas} & \textbf{Costo} \\
+        \hline
+        Enero   & 1000   & 500  \\
+        Febrero & 1500   & 750  \\
+        Marzo   & 1200   & 600  \\
+        Abril   & 1300   & 650  \\
+        \hline
+    \end{tabular}
+    \caption{Datos de ventas y costos por mes.}
+    \label{tab:ventas}  % Etiqueta para la tabla
+\end{table}
+
+\newpage  % Cambiar de página
+
+% Página 3 - Segunda Tabla
+\section{Segunda Tabla}
+Aquí se presenta la segunda tabla que muestra el rendimiento de los empleados por trimestre.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Empleado} & \textbf{Trimestre 1} & \textbf{Trimestre 2} \\
+        \hline
+        Juan   & 85  & 90  \\
+        María  & 88  & 92  \\
+        Pedro  & 80  & 85  \\
+        Laura  & 90  & 95  \\
+        \hline
+    \end{tabular}
+    \caption{Rendimiento de los empleados por trimestre.}
+    \label{tab:empleados}  % Etiqueta para la tabla
+\end{table}
+
+\end{document}

@@ -1,0 +1,20 @@
+Sub FormatoTaula()
+'
+' FormatoTaula Macro
+'
+'
+    Selection.ConvertToTable Separator:=wdSeparateByTabs, NumColumns:=4, _
+        NumRows:=7, AutoFitBehavior:=wdAutoFitFixed
+    With Selection.Tables(1)
+        .Style = "Tabla con cuadrícula"
+        .ApplyStyleHeadingRows = True
+        .ApplyStyleLastRow = False
+        .ApplyStyleFirstColumn = True
+        .ApplyStyleLastColumn = False
+    End With
+    Selection.ParagraphFormat.Alignment = wdAlignParagraphCenter
+    Selection.Font.Bold = wdToggle
+    Selection.Shading.Texture = wdTextureNone
+    Selection.Shading.ForegroundPatternColor = wdColorAutomatic
+    Selection.Shading.BackgroundPatternColor = -570376193
+End Sub

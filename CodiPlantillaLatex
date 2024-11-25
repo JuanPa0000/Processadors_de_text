@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx} % Requerido para insertar imágenes
+\usepackage{fancyhdr} % Para configurar cabeceras y pies de página
+\usepackage{lipsum} % Para generar texto de ejemplo
+\usepackage{hyperref} % Para enlaces en el índice
+
+% Configuración de cabeceras y pies de página
+\pagestyle{fancy}
+\fancyhf{} % Limpiar todas las cabeceras y pies por defecto
+\fancyhead[L]{Juan Pablo Fuentes} % Cabecera izquierda
+\fancyhead[C]{Título de la plantilla} % Cabecera central
+\fancyhead[R]{\hyperlink{indice}{Índice}} % Cabecera derecha con enlace al índice
+\fancyfoot[C]{Página \thepage} % Pie de página central
+
+\title{\Huge Título de la plantilla}
+\author{} % No se pone autor en la primera página
+\date{} % No se pone fecha en la primera página
+
+\begin{document}
+
+% Página 1 - Título
+\maketitle
+\begin{flushright}
+\vspace{5cm}
+\textbf{Nombre: Juan Pablo Fuentes}\\
+Profesor: Joan Carreras\\
+Fecha de entrega: \today\\
+Curso: 1SMX A\\
+Módulo: Aplicacions Ofimàtiques
+\end{flushright}
+
+\newpage % Cambiar de página
+
+% Página 2 - Índice (Tabla de contenido)
+\hypertarget{indice}{} % Crear un "marcador" en la página del índice
+\renewcommand{\contentsname}{Índice} % Modificar el nombre de la tabla de contenido
+\tableofcontents % Genera el índice
+
+\newpage % Cambiar de página
+
+% Página 3 - Inicio del contenido
+\section{Título 1}
+
+\newpage % Cambiar de página
+
+\section{Bibliografía}
+
+\end{document} 

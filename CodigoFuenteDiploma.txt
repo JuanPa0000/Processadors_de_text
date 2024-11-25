@@ -1,0 +1,316 @@
+Sub Main
+
+End Sub
+
+
+
+
+sub Diploma
+rem ----------------------------------------------------------------------
+rem define variables
+dim document   as object
+dim dispatcher as object
+rem ----------------------------------------------------------------------
+rem get access to the document
+document   = ThisComponent.CurrentController.Frame
+dispatcher = createUnoService("com.sun.star.frame.DispatchHelper")
+
+rem ----------------------------------------------------------------------
+dim args1(0) as new com.sun.star.beans.PropertyValue
+args1(0).Name = "Bold"
+args1(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:Bold", "", 0, args1())
+
+rem ----------------------------------------------------------------------
+dim args2(4) as new com.sun.star.beans.PropertyValue
+args2(0).Name = "CharFontName.StyleName"
+args2(0).Value = ""
+args2(1).Name = "CharFontName.Pitch"
+args2(1).Value = 1
+args2(2).Name = "CharFontName.CharSet"
+args2(2).Value = -1
+args2(3).Name = "CharFontName.Family"
+args2(3).Value = 2
+args2(4).Name = "CharFontName.FamilyName"
+args2(4).Value = "Cascadia Code SemiBold"
+
+dispatcher.executeDispatch(document, ".uno:CharFontName", "", 0, args2())
+
+rem ----------------------------------------------------------------------
+dim args3(2) as new com.sun.star.beans.PropertyValue
+args3(0).Name = "FontHeight.Height"
+args3(0).Value = 28
+args3(1).Name = "FontHeight.Prop"
+args3(1).Value = 100
+args3(2).Name = "FontHeight.Diff"
+args3(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args3())
+
+rem ----------------------------------------------------------------------
+dim args4(0) as new com.sun.star.beans.PropertyValue
+args4(0).Name = "CenterPara"
+args4(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args4())
+
+rem ----------------------------------------------------------------------
+dim args5(0) as new com.sun.star.beans.PropertyValue
+args5(0).Name = "CenterPara"
+args5(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args5())
+
+rem ----------------------------------------------------------------------
+dim args6(2) as new com.sun.star.beans.PropertyValue
+args6(0).Name = "FontHeight.Height"
+args6(0).Value = 20
+args6(1).Name = "FontHeight.Prop"
+args6(1).Value = 100
+args6(2).Name = "FontHeight.Diff"
+args6(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args6())
+
+rem ----------------------------------------------------------------------
+dim args7(2) as new com.sun.star.beans.PropertyValue
+args7(0).Name = "FontHeight.Height"
+args7(0).Value = 24
+args7(1).Name = "FontHeight.Prop"
+args7(1).Value = 100
+args7(2).Name = "FontHeight.Diff"
+args7(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args7())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dim args10(0) as new com.sun.star.beans.PropertyValue
+args10(0).Name = "CenterPara"
+args10(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args10())
+
+rem ----------------------------------------------------------------------
+dim args11(2) as new com.sun.star.beans.PropertyValue
+args11(0).Name = "FontHeight.Height"
+args11(0).Value = 21
+args11(1).Name = "FontHeight.Prop"
+args11(1).Value = 100
+args11(2).Name = "FontHeight.Diff"
+args11(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args11())
+
+rem ----------------------------------------------------------------------
+dim args12(0) as new com.sun.star.beans.PropertyValue
+args12(0).Name = "CenterPara"
+args12(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args12())
+
+rem ----------------------------------------------------------------------
+dim args13(0) as new com.sun.star.beans.PropertyValue
+args13(0).Name = "Text"
+args13(0).Value = "Juan Pablo Fuentes"
+
+dispatcher.executeDispatch(document, ".uno:InsertText", "", 0, args13())
+
+rem ----------------------------------------------------------------------
+dim args14(2) as new com.sun.star.beans.PropertyValue
+args14(0).Name = "FontHeight.Height"
+args14(0).Value = 26
+args14(1).Name = "FontHeight.Prop"
+args14(1).Value = 100
+args14(2).Name = "FontHeight.Diff"
+args14(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args14())
+
+rem ----------------------------------------------------------------------
+dim args15(2) as new com.sun.star.beans.PropertyValue
+args15(0).Name = "FontHeight.Height"
+args15(0).Value = 28
+args15(1).Name = "FontHeight.Prop"
+args15(1).Value = 100
+args15(2).Name = "FontHeight.Diff"
+args15(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args15())
+
+rem ----------------------------------------------------------------------
+dim args16(0) as new com.sun.star.beans.PropertyValue
+args16(0).Name = "Bold"
+args16(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:Bold", "", 0, args16())
+
+rem ----------------------------------------------------------------------
+dim args17(4) as new com.sun.star.beans.PropertyValue
+args17(0).Name = "CharFontName.StyleName"
+args17(0).Value = ""
+args17(1).Name = "CharFontName.Pitch"
+args17(1).Value = 1
+args17(2).Name = "CharFontName.CharSet"
+args17(2).Value = -1
+args17(3).Name = "CharFontName.Family"
+args17(3).Value = 2
+args17(4).Name = "CharFontName.FamilyName"
+args17(4).Value = "Cascadia Code SemiBold"
+
+dispatcher.executeDispatch(document, ".uno:CharFontName", "", 0, args17())
+
+rem ----------------------------------------------------------------------
+dim args18(0) as new com.sun.star.beans.PropertyValue
+args18(0).Name = "CenterPara"
+args18(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args18())
+
+rem ----------------------------------------------------------------------
+dim args19(2) as new com.sun.star.beans.PropertyValue
+args19(0).Name = "FontHeight.Height"
+args19(0).Value = 21
+args19(1).Name = "FontHeight.Prop"
+args19(1).Value = 100
+args19(2).Name = "FontHeight.Diff"
+args19(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args19())
+
+rem ----------------------------------------------------------------------
+dim args20(2) as new com.sun.star.beans.PropertyValue
+args20(0).Name = "FontHeight.Height"
+args20(0).Value = 18
+args20(1).Name = "FontHeight.Prop"
+args20(1).Value = 100
+args20(2).Name = "FontHeight.Diff"
+args20(2).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:FontHeight", "", 0, args20())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dim args25(2) as new com.sun.star.beans.PropertyValue
+args25(0).Name = "Underline.LineStyle"
+args25(0).Value = 1
+args25(1).Name = "Underline.HasColor"
+args25(1).Value = false
+args25(2).Name = "Underline.Color"
+args25(2).Value = -1
+
+dispatcher.executeDispatch(document, ".uno:Underline", "", 0, args25())
+
+rem ----------------------------------------------------------------------
+dim args26(2) as new com.sun.star.beans.PropertyValue
+args26(0).Name = "Underline.LineStyle"
+args26(0).Value = 0
+args26(1).Name = "Underline.HasColor"
+args26(1).Value = false
+args26(2).Name = "Underline.Color"
+args26(2).Value = -1
+
+dispatcher.executeDispatch(document, ".uno:Underline", "", 0, args26())
+
+rem ----------------------------------------------------------------------
+dim args27(0) as new com.sun.star.beans.PropertyValue
+args27(0).Name = "Italic"
+args27(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:Italic", "", 0, args27())
+
+rem ----------------------------------------------------------------------
+dim args28(0) as new com.sun.star.beans.PropertyValue
+args28(0).Name = "CenterPara"
+args28(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args28())
+
+rem ----------------------------------------------------------------------
+dim args29(0) as new com.sun.star.beans.PropertyValue
+args29(0).Name = "Strikeout.Kind"
+args29(0).Value = 1
+
+dispatcher.executeDispatch(document, ".uno:Strikeout", "", 0, args29())
+
+rem ----------------------------------------------------------------------
+dim args30(0) as new com.sun.star.beans.PropertyValue
+args30(0).Name = "Strikeout.Kind"
+args30(0).Value = 0
+
+dispatcher.executeDispatch(document, ".uno:Strikeout", "", 0, args30())
+
+rem ----------------------------------------------------------------------
+dim args31(2) as new com.sun.star.beans.PropertyValue
+args31(0).Name = "Underline.LineStyle"
+args31(0).Value = 1
+args31(1).Name = "Underline.HasColor"
+args31(1).Value = false
+args31(2).Name = "Underline.Color"
+args31(2).Value = -1
+
+dispatcher.executeDispatch(document, ".uno:Underline", "", 0, args31())
+
+rem ----------------------------------------------------------------------
+dim args32(0) as new com.sun.star.beans.PropertyValue
+args32(0).Name = "Bold"
+args32(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:Bold", "", 0, args32())
+
+rem ----------------------------------------------------------------------
+dim args33(0) as new com.sun.star.beans.PropertyValue
+args33(0).Name = "CenterPara"
+args33(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:CenterPara", "", 0, args33())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertPara", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dim args35(2) as new com.sun.star.beans.PropertyValue
+args35(0).Name = "Underline.LineStyle"
+args35(0).Value = 1
+args35(1).Name = "Underline.HasColor"
+args35(1).Value = false
+args35(2).Name = "Underline.Color"
+args35(2).Value = -1
+
+dispatcher.executeDispatch(document, ".uno:Underline", "", 0, args35())
+
+rem ----------------------------------------------------------------------
+dim args36(0) as new com.sun.star.beans.PropertyValue
+args36(0).Name = "Bold"
+args36(0).Value = true
+
+dispatcher.executeDispatch(document, ".uno:Bold", "", 0, args36())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:PageDialog", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:InsertGraphic", "", 0, Array())
+
+rem ----------------------------------------------------------------------
+dispatcher.executeDispatch(document, ".uno:PageDialog", "", 0, Array())
+
+
+end sub
